@@ -5,7 +5,7 @@ const ctx=canvas.getContext("2d");
 const gameContain=document.getElementById("contain");
 
 const sheep = new Image();
-sheep.src="asset/sheep2.PNG";
+sheep.src="asset/sheep2.png";
 
 
 
@@ -13,7 +13,7 @@ const shspeed =-3;
 const shwidth=64; const shheight=64;
 
 const pipe = new Image();
-pipe.src="asset/pipe.PNG";
+pipe.src="asset/pipe.png";
 const pipewidth =64;
 const pipeheight=512;
 
