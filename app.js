@@ -8,7 +8,6 @@ const sheep = new Image();
 sheep.src="asset/sheep2.PNG";
 
 
-
 const shspeed =-3;
 const shwidth=64; const shheight=64;
 
@@ -35,7 +34,6 @@ let pipey2=canvas.height-160;
 let pipegap2=90;
 
 let sx=0; let sy=0;
-
 let sx2=640; let sy2=0;
 
 let score=0;
@@ -45,6 +43,7 @@ let scorediv=document.getElementById('point');
 
 let rebtn = document.getElementById('butn');
 let stbtn = document.getElementById('stbtn');
+
 
 
 
@@ -89,6 +88,15 @@ function showconsole(){
 }
 rebtn.addEventListener('click',showconsole);
 
+//score
+function updateScore(newScore) {
+    localStorage.setItem('hscore', newScore);
+}
+function getScore() {
+    const score = localStorage.getItem('hscore');
+    return score ? parseInt(score) : 0;
+}
+highscore =getScore();
 //sound
 function playSound() {
     var z=Math.floor(Math.random() * 2);
@@ -212,7 +220,6 @@ function reset(){
     pipegap=90;
     /*
     let sx=0; let sy=0;
-
     let sx2=640; let sy2=0;
     */
     pipex2=640;
@@ -241,6 +248,7 @@ function endmenu(){
     document.getElementById("endscore").innerHTML=score;
     if(highscore<score){
         highscore=score;
+        updateScore(score);
     }
     document.getElementById("bestscore").innerHTML=highscore;
 
@@ -275,6 +283,7 @@ function loop(){
     ctx.drawImage(star,sx,sy);
     ctx.drawImage(star,sx2,sy2);
 
+
     //drawSheep
     ctx.drawImage(sheep,x,y);
     //pipe
@@ -285,7 +294,6 @@ function loop(){
     ctx.drawImage(pipe,pipex2,pipey2+pipegap2,pipewidth,pipeheight);   
         //move
     pipex-=1.5;
-
     sx-=0.1;
     sx2-=0.1;
     if(pipex<-64){
@@ -318,7 +326,6 @@ function loop(){
         sx2=640;
     }
 
-    
     //collisionCheck
     if(hitted()){
         endmenu();
