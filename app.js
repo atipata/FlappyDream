@@ -336,13 +336,13 @@ function loop(){
     velo+=acc;
     y+=velo;
     //console.log(velo);
-    /*
+    
     if(velo>0){
         sheep.src="asset/sheep2.PNG";
     }else{
         sheep.src="asset/sheep1.PNG";
     }
-    */
+    
     requestAnimationFrame(loop);
 
 }
@@ -354,11 +354,9 @@ function soundsheep(){
 }
 rebtn.addEventListener('click',showconsole);
 //st
-
 stbtn.addEventListener('click',hidconsole);
 document.body.onkeyup = function(e){
     if(e.code=="KeyS"){
         hidconsole();
-        
     }
 }
