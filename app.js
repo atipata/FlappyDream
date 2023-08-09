@@ -336,11 +336,13 @@ function loop(){
     velo+=acc;
     y+=velo;
     //console.log(velo);
+    /*
     if(velo>0){
         sheep.src="asset/sheep2.PNG";
     }else{
         sheep.src="asset/sheep1.PNG";
     }
+    */
     requestAnimationFrame(loop);
 
 }
