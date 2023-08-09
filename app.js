@@ -34,10 +34,8 @@ let pipex2=640;
 let pipey2=canvas.height-160;
 let pipegap2=90;
 
-let mx=0; let my=0;
 let sx=0; let sy=0;
 
-let mx2=640; let my2=0;
 let sx2=640; let sy2=0;
 
 let score=0;
@@ -213,10 +211,8 @@ function reset(){
     pipey=canvas.height-160;
     pipegap=90;
     /*
-    let mx=0; let my=0;
     let sx=0; let sy=0;
 
-    let mx2=640; let my2=0;
     let sx2=640; let sy2=0;
     */
     pipex2=640;
@@ -279,8 +275,6 @@ function loop(){
     ctx.drawImage(star,sx,sy);
     ctx.drawImage(star,sx2,sy2);
 
-    ctx.drawImage(moutain,mx,my);
-    ctx.drawImage(moutain,mx2,my2);
     //drawSheep
     ctx.drawImage(sheep,x,y);
     //pipe
@@ -291,8 +285,7 @@ function loop(){
     ctx.drawImage(pipe,pipex2,pipey2+pipegap2,pipewidth,pipeheight);   
         //move
     pipex-=1.5;
-    mx-=0.2;
-    mx2-=0.2;
+
     sx-=0.1;
     sx2-=0.1;
     if(pipex<-64){
@@ -325,11 +318,7 @@ function loop(){
         sx2=640;
     }
 
-    if(mx<=-640){
-        mx=640;
-    }if(mx2<= -640){
-        mx2=640;
-    }
+    
     //collisionCheck
     if(hitted()){
         endmenu();
