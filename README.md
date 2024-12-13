@@ -3,6 +3,9 @@
   Using HTML JavaScript CSS<br>
   📚 I'm learning how to make website <br>
 </p>
+<div align="center">
+        <img src="Screenshot/1main.png" >
+</div>
 <h2 align="center">
   <a href="https://lovely-conkies-eda9f0.netlify.app/" target="_blank">
     💥the game link here💥
