@@ -8,7 +8,9 @@
     💥the game link here💥
   </a> 
 </h2>
-
+<div align="center">
+        <img src="Screenshot/2qrcode.png" alt="Centered GIF">
+</div>
 
 
 <p  ><strong>
