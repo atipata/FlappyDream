@@ -9,7 +9,7 @@
   </a> 
 </h2>
 <div align="center">
-        <img src="Screenshot/2qrcode.png" alt="Centered GIF">
+        <img src="Screenshot/3.gif" alt="Centered GIF">
 </div>
 
 
