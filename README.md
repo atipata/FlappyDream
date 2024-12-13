@@ -4,8 +4,8 @@
   📚 I'm learning how to make website <br>
 </p>
 <h2 align="center">
-  <a href="https://www.linkedin.com/in/atipat-beau-a8a592338/" target="_blank">
-    the game link here
+  <a href="https://lovely-conkies-eda9f0.netlify.app/" target="_blank">
+    💥the game link here💥
   </a> 
 </h2>
 
